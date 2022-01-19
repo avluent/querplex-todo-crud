@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { TodosService } from '../../services/todos.service';
 
 @Component({
   selector: 'app-todos-body',
@@ -7,7 +8,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TodosBodyComponent implements OnInit {
 
-  constructor() { }
+  constructor(todosService: TodosService) { 
+    todosService.getTodosFromApi()
+  }
 
   ngOnInit(): void {
   }

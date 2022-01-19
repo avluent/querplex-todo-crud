@@ -25,7 +25,7 @@ const mockTodos = [{
 ]
 
 var corsOptions = {
-    origin: 'http://localhost',
+    origin: 'http://localhost:4200',
     optionsSuccessStatus: 200
 }
 
